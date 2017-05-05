@@ -1,0 +1,16 @@
+<div>
+  <h1><strong>Login</strong> or <strong>Register</strong></h1>
+</div>
+<div>
+  <form name="auth" novalidate ng-submit="$ctrl.onLogin(auth)">
+    <input type="text" class="form-control input-lg" name="name"
+           ng-model="$ctrl.user.name" required placeholder="Name">
+    <br>
+    <input type="password" class="form-control input-lg" name="password"
+           ng-model="$ctrl.user.password" required placeholder="Password">
+    <br>
+    <button type="submit" class="btn btn-sm btn-primary" ng-disabled="!auth.$valid">
+      <i class="fa fa-angle-right"></i> Login
+    </button>
+  </form>
+</div>

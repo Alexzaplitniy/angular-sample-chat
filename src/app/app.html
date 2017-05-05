@@ -1,0 +1,17 @@
+<div>
+  <button type="button" ng-click="$ctrl.onLogout()">Logout</button>
+</div>
+
+<br>
+<br>
+
+<app-form on-add="$ctrl.addMessage($event)"></app-form>
+
+<br>
+<br>
+
+<ul>
+  <app-list
+    ng-repeat="item in $ctrl.list | orderBy:'-time' track by $index "
+    data-item="item"></app-list>
+</ul>
