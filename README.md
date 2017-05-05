@@ -1,6 +1,6 @@
 ## Getting started
 
 - Clone this repo
-- `npm install` to install all req'd dependencies
-- `npm serve` to start the local server
-- `npm build` to build static files
+- `npm run install` to install all req'd dependencies
+- `npm run serve` to start the local server
+- `npm run build` to build static files
